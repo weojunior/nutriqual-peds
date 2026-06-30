@@ -67,6 +67,13 @@ flow and renders the results.
 GNU General Public License v3.0 or later (see `LICENSE`), compatible with the reference
 software.
 
+## Author
+
+Wilson E. Oliveira Junior, MD, PhD.
+[ORCID 0000-0001-9812-6282](https://orcid.org/0000-0001-9812-6282) ·
+[Scopus 57225293188](https://www.scopus.com/authid/detail.uri?authorId=57225293188) ·
+[Google Scholar](https://scholar.google.com/citations?user=2WQS9QIAAAAJ&hl=pt-BR)
+
 ## How to cite
 
 See `CITATION.cff`. The archived version has a DOI (Zenodo); cite that DOI.
