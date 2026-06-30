@@ -1,9 +1,11 @@
-# Reproducible lexical analysis pipeline (Reinert/IRaMuTeQ, Python and R)
+# NutriQual-Peds: a reproducible pipeline for computer-assisted lexical analysis of qualitative data in pediatric nutritional therapy
 
-Reproducible pipeline that reimplements the Reinert descending hierarchical
-classification (the IRaMuTeQ method) in Python and cross-validates it against the
-canonical R implementation. It was used to reanalyze focus-group transcripts on the
-nutritional challenges of children and adolescents undergoing chemotherapy.
+Reproducible pipeline for the lexical analysis of qualitative data in pediatric
+nutritional therapy. It reimplements the Reinert descending hierarchical classification
+(the IRaMuTeQ method) in Python and cross-validates it against the canonical R
+implementation. It was used to reanalyze focus-group transcripts on the nutritional
+challenges of children and adolescents undergoing chemotherapy (oral feeding, oral
+nutritional supplementation, and nasoenteral tube feeding).
 
 This repository accompanies two companion manuscripts (a clinical paper and a
 methodological paper) and is provided for transparency and reproducibility.
