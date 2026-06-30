@@ -1,0 +1,18 @@
+{
+  "upload_type": "software",
+  "title": "Reproducible lexical analysis pipeline (Reinert/IRaMuTeQ, Python and R)",
+  "description": "Reproducible Python and R pipeline reimplementing the Reinert descending hierarchical classification (the IRaMuTeQ method), with cross-validation between the two implementations, used to reanalyze focus-group transcripts on nutritional challenges in pediatric oncology. Independent reimplementation; the IRaMuTeQ dictionaries and canonical R scripts are third-party components obtained separately (see NOTICE). Sensitive transcripts are not included.",
+  "license": "GPL-3.0-or-later",
+  "access_right": "open",
+  "creators": [
+    { "name": "[WEOJ, full name]", "orcid": "0000-0000-0000-0000" }
+  ],
+  "keywords": [
+    "lexical analysis", "IRaMuTeQ", "Reinert method",
+    "descending hierarchical classification", "focus groups",
+    "pediatric oncology", "reproducibility"
+  ],
+  "related_identifiers": [
+    { "relation": "isDerivedFrom", "identifier": "https://github.com/cardososampaio/labiia_lex", "scheme": "url" }
+  ]
+}

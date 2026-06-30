@@ -1,0 +1,66 @@
+{
+  "afc": {
+    "total_inertia_py": 0.677281,
+    "inertia_pct_py": [
+      55.154,
+      44.846
+    ],
+    "inertia_pct_r": [
+      55.154,
+      44.846
+    ],
+    "max_abs_diff_inertia_pct": 0.0
+  },
+  "specificities": {
+    "grupo": {
+      "n_compared": 44,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "n_participantes": {
+      "n_compared": 6,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "sexo_predominante_responsaveis": {
+      "n_compared": 16,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "sexo_predominante_pacientexs": {
+      "n_compared": 12,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "escolaridade_predominante": {
+      "n_compared": 16,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "regiao_predominante": {
+      "n_compared": 23,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "tempo_tto_faixa": {
+      "n_compared": 16,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "desnutricao_grupo": {
+      "n_compared": 16,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "sne_grupo": {
+      "n_compared": 22,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    },
+    "sne_xp_grupo": {
+      "n_compared": 13,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    }
+  }
+}

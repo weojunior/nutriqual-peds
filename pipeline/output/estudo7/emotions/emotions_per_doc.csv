@@ -1,0 +1,8 @@
+doc_id;raiva;antecipação;nojo;medo;alegria;tristeza;surpresa;confiança;negative;positive;grupo;n_participantes;sexo_predominante_responsaveis;sexo_predominante_pacientexs;escolaridade_predominante;regiao_predominante;tumor_predominante;tempo_tto_faixa;desnutricao_grupo;sne_grupo;sne_xp_grupo
+grupo1;14;8;16;19;7;24;4;19;46;37;G1;6;feminino;masculino;medio;sudeste;solido;4-6 meses;1;0;1
+grupo2;17;10;17;29;10;27;5;21;50;33;G2;6;masculino;masculino;superior;norte;solido;4-6 meses;1;0;1
+grupo3;19;17;15;26;14;31;12;21;56;38;G3;6;feminino;feminino;medio;centro-oeste;solido;0-3 meses;3;1;1
+grupo5;15;9;12;21;8;25;7;16;48;25;G5;6;feminino;feminino;medio;sudeste;solido;0-3 meses;2;0;2
+grupo6;10;13;14;16;11;24;7;17;45;37;G6;6;feminino;masculino;medio;centro-oeste;solido;0-3 meses;1;1;1
+grupo7;9;8;13;15;9;17;9;13;33;25;G7;4;feminino;masculino;superior;sudeste;solido;0-3 meses;0;0;0
+grupo8;12;12;14;21;11;24;9;18;40;31;G8;4;feminino;feminino;medio;centro-oeste;solido;7-12 meses;1;1;2

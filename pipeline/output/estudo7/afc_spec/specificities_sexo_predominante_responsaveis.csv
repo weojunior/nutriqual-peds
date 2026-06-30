@@ -1,0 +1,17 @@
+form;part;score;sign;observed;expected
+enjoar;feminino;3.346;-;6;12.193
+náusea;feminino;2.592;-;9;14.631
+amendoim;feminino;2.185;-;0;2.439
+autismo;feminino;2.185;-;0;2.439
+japonês;feminino;2.185;-;0;2.439
+proibir;feminino;2.185;-;0;2.439
+doutor;feminino;2.15;-;9;13.818
+aceitar;feminino;2.049;+;32;26.824
+enjoar;masculino;3.346;+;9;2.807
+náusea;masculino;2.592;+;9;3.369
+amendoim;masculino;2.185;+;3;0.561
+autismo;masculino;2.185;+;3;0.561
+japonês;masculino;2.185;+;3;0.561
+proibir;masculino;2.185;+;3;0.561
+doutor;masculino;2.15;+;8;3.182
+aceitar;masculino;2.049;-;1;6.176

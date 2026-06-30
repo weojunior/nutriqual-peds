@@ -1,0 +1,82 @@
+{
+  "n_uci": 7,
+  "n_uce": 381,
+  "uce_tokens": {
+    "min": 5,
+    "mediana": 47.0,
+    "media": 49.2,
+    "max": 85
+  },
+  "tokens_totais": 18738,
+  "tokens_ativos": 4464,
+  "proporcao_ativos": 0.238,
+  "vocabulario_ativo": 973,
+  "hapax": 543,
+  "hapax_pct": 55.8,
+  "formas_retidas_min_freq": 267,
+  "uces_nao_vazias": 378,
+  "uces_retidas_pct": 99.2,
+  "uci_com_uma_uce": 0,
+  "top_formas": [
+    [
+      "comer",
+      265
+    ],
+    [
+      "tomar",
+      144
+    ],
+    [
+      "querer",
+      104
+    ],
+    [
+      "sonda",
+      85
+    ],
+    [
+      "suplemento",
+      75
+    ],
+    [
+      "bem",
+      74
+    ],
+    [
+      "quimioterapia",
+      70
+    ],
+    [
+      "dificuldade",
+      70
+    ],
+    [
+      "fruta",
+      64
+    ],
+    [
+      "começar",
+      62
+    ],
+    [
+      "passar",
+      59
+    ],
+    [
+      "vomitar",
+      56
+    ],
+    [
+      "água",
+      51
+    ],
+    [
+      "peso",
+      51
+    ],
+    [
+      "comida",
+      49
+    ]
+  ]
+}

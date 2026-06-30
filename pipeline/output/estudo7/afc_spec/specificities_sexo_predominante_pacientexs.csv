@@ -1,0 +1,13 @@
+form;part;score;sign;observed;expected
+quimioterapia;feminino;2.947;-;12;23.336
+gostar;feminino;2.594;+;23;14.329
+sonda;feminino;2.529;+;38;26.612
+alimentação;feminino;2.427;-;7;15.148
+sentir;feminino;2.186;-;2;7.369
+pesquisar;feminino;2.062;-;0;3.685
+quimioterapia;masculino;2.947;+;45;33.664
+gostar;masculino;2.594;-;12;20.671
+sonda;masculino;2.529;-;27;38.388
+alimentação;masculino;2.427;+;30;21.852
+sentir;masculino;2.186;+;16;10.631
+pesquisar;masculino;2.062;+;9;5.315

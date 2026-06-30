@@ -1,0 +1,29 @@
+{
+  "saturacao_lexical_cronologica": null,
+  "saturacao_por_criterio": {
+    "vocabulario": null,
+    "chd_estabilidade": null,
+    "formas_caracteristicas": null,
+    "estrutural": null,
+    "combinada": null
+  },
+  "saturacao_tematica_declarada": 3,
+  "saturacao_lexical_aleatoria": {},
+  "limiares": {
+    "new_ratio": 0.05,
+    "chd_ari": 0.8,
+    "char_jaccard": 0.8
+  },
+  "cobertura_categorias_no_corpus_completo": {
+    "alimentacao": 0.86,
+    "higiene": 0.5,
+    "sintomas_gi": 0.83,
+    "terapias_sne": 1.0
+  },
+  "categoria_totalmente_coberta_no_grupo": {
+    "alimentacao": null,
+    "higiene": null,
+    "sintomas_gi": null,
+    "terapias_sne": 5
+  }
+}

@@ -1,0 +1,7 @@
+form;part;score;sign;observed;expected
+receio;4;2.526;+;5;1.369
+uso;4;2.213;+;6;2.054
+sabor;4;2.072;+;5;1.598
+receio;6;2.526;-;1;4.631
+uso;6;2.213;-;3;6.946
+sabor;6;2.072;-;2;5.402

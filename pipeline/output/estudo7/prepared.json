@@ -1,0 +1,35 @@
+{
+  "n_uci": 7,
+  "n_uce_total": 381,
+  "n_uce_retained": 378,
+  "n_active_forms": 267,
+  "uce_size_target": 40,
+  "min_freq": 3,
+  "lang": "pt",
+  "corpus_dir": "/Users/woliveirajr/Documents/labiia_lex/meu_corpus",
+  "dictionaries": "/Users/woliveirajr/Documents/labiia_lex/extracted/internal/dictionaries",
+  "turn_filter": [
+    "moderador",
+    "mediador",
+    "palestrante",
+    "entrevistador",
+    "facilitador",
+    "pesquisador",
+    "coordenador",
+    "apresentador"
+  ],
+  "preprocess": {
+    "stopwords": "/Users/woliveirajr/Documents/labiia_lex/pipeline/config_med/stopwords.txt",
+    "synonyms": "/Users/woliveirajr/Documents/labiia_lex/pipeline/config_med/synonyms.csv",
+    "expressions": null,
+    "adverbs_active": true,
+    "unknown_active": true,
+    "min_token_len": 1,
+    "anon_prefix": "anon"
+  },
+  "outputs": {
+    "dtm": "/Users/woliveirajr/Documents/labiia_lex/pipeline/output/estudo7/dtm.csv",
+    "forms": "/Users/woliveirajr/Documents/labiia_lex/pipeline/output/estudo7/forms.csv",
+    "uce_meta": "/Users/woliveirajr/Documents/labiia_lex/pipeline/output/estudo7/uce_meta.csv"
+  }
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Reproducible lexical analysis pipeline (Reinert/IRaMuTeQ, Python and R)"
+abstract: >-
+  Reproducible Python and R pipeline reimplementing the Reinert descending hierarchical
+  classification (the IRaMuTeQ method), with cross-validation between the two
+  implementations, used to reanalyze focus-group transcripts on nutritional challenges
+  in pediatric oncology.
+version: "1.0.0"
+date-released: "2026-06-30"
+license: GPL-3.0-or-later
+type: software
+repository-code: "https://github.com/<ORG_OR_USER>/labiialex-reanalise"   # TODO confirm
+# doi: "10.5281/zenodo.XXXXXXX"   # TODO add after Zenodo minting
+authors:
+  - given-names: "Wilson"            # TODO confirm full given/family names and ORCID
+    family-names: "[WEOJ]"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+  # TODO: add co-authors as agreed (e.g., DAB, MSM, supervisors) with ORCIDs
+keywords:
+  - "lexical analysis"
+  - "IRaMuTeQ"
+  - "Reinert method"
+  - "descending hierarchical classification"
+  - "focus groups"
+  - "pediatric oncology"
+  - "reproducibility"

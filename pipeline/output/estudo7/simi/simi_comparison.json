@@ -1,0 +1,14 @@
+{
+  "n_forms": 60,
+  "n_uce": 378,
+  "index": "cooccurrence",
+  "bug_demo": {
+    "max_abs_diff_phi": 28.1073,
+    "mean_abs_diff_phi": 0.7829,
+    "n_pairs_d_negative_no_bug": 604
+  },
+  "n_communities": 8,
+  "python_mst_total_weight": 748.0,
+  "r_mst_total_weight": 748.0,
+  "mst_edge_jaccard_py_vs_r": 0.8438
+}

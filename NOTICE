@@ -1,0 +1,22 @@
+NOTICE
+======
+
+This repository contains an independent reimplementation, in Python and R, of the
+Reinert descending hierarchical classification (the IRaMuTeQ method), together with the
+authors' own configuration, notebook, and non-identifying analysis outputs. This code
+is the original work of the repository authors and is licensed under the GNU General
+Public License v3.0 or later.
+
+Third-party components (NOT part of this repository's original code, NOT redistributed
+here, obtained via setup_dependencies.sh):
+
+- IRaMuTeQ dictionaries (lexique_pt.txt, key.cfg, expression_pt.txt) and the canonical R
+  scripts (CHD.R, chdfunct.R, anacor.R, simi.R, and related files). Original method and
+  code by Pierre Ratinaud (IRaMuTeQ), licensed under the GNU GPL.
+
+- These components are distributed with the labiia_lex software by Rafael Cardoso
+  Sampaio (https://github.com/cardososampaio/labiia_lex), version 1.0.9, GNU GPL v3,
+  from which they are fetched.
+
+The authors are grateful to Rafael Cardoso Sampaio for making labiia_lex publicly
+available and acknowledge Pierre Ratinaud for the IRaMuTeQ method.

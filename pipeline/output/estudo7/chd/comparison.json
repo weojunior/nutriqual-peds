@@ -1,0 +1,27 @@
+{
+  "n_uce": 378,
+  "n_forms": 267,
+  "python": {
+    "n_classes": 3,
+    "class_sizes": {
+      "1": 211,
+      "2": 155,
+      "3": 12
+    }
+  },
+  "warnings": [
+    "88 formas características têm célula esperada <5 (χ² frágil; interprete com cautela). Por classe: C1:29, C2:42, C3:17"
+  ],
+  "r_reference": {
+    "n_classes": 3,
+    "adjusted_rand_index_vs_python": 0.8651,
+    "n_compared": 378
+  },
+  "stability": {
+    "n_runs": 8,
+    "subsample": 0.85,
+    "within_class_coassoc": 0.7923,
+    "between_class_coassoc": 0.2528,
+    "stability": 0.5394
+  }
+}

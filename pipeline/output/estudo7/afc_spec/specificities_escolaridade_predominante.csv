@@ -1,0 +1,17 @@
+form;part;score;sign;observed;expected
+náusea;medio;4.79;-;4;12.944
+aceitar;medio;2.77;+;31;23.73
+sentir;medio;2.472;-;7;12.944
+gastrostomia;medio;2.299;+;16;11.506
+dificuldade;medio;2.237;-;33;42.427
+suprir;medio;2.208;-;0;2.876
+quimioterapia;medio;2.138;-;32;40.989
+enjoar;medio;2.023;-;6;10.787
+náusea;superior;4.79;+;14;5.056
+aceitar;superior;2.77;-;2;9.27
+sentir;superior;2.472;+;11;5.056
+gastrostomia;superior;2.299;-;0;4.494
+dificuldade;superior;2.237;+;26;16.573
+suprir;superior;2.208;+;4;1.124
+quimioterapia;superior;2.138;+;25;16.011
+enjoar;superior;2.023;+;9;4.213
