@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Third-party dependencies fetched by setup_dependencies.sh (not redistributed)
+extracted/internal/dictionaries/
+extracted/internal/Rscripts/
+
+# OS
+.DS_Store
+
+# Sensitive data must never be committed
+**/uce_texts.csv
+**/typical_segments.csv
+**/kwic/
+**/report.html
+**/_docs.csv
+*.log

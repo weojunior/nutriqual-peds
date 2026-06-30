@@ -1,0 +1,18 @@
+{
+  "k": 4,
+  "level": "uce",
+  "n_docs": 378,
+  "mean_topic_top_terms_jaccard": 0.3037,
+  "topic_stability_jaccard": 0.3787,
+  "ktuning": {
+    "k_min": 2,
+    "k_max": 10,
+    "k_otimo_por_metrica": {
+      "Griffiths2004": 10,
+      "Deveaud2014": 2,
+      "CaoJuan2009": 2,
+      "Arun2010": 10
+    },
+    "k_sugerido_combinado": 9
+  }
+}
