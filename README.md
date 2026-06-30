@@ -1,5 +1,7 @@
 # NutriQual-Peds: a reproducible pipeline for computer-assisted lexical analysis of qualitative data in pediatric nutritional therapy
 
+[![DOI](https://zenodo.org/badge/1285083748.svg)](https://zenodo.org/badge/latestdoi/1285083748)
+
 Reproducible pipeline for the lexical analysis of qualitative data in pediatric
 nutritional therapy. It reimplements the Reinert descending hierarchical classification
 (the IRaMuTeQ method) in Python and cross-validates it against the canonical R
