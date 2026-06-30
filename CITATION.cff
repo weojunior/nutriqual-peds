@@ -13,9 +13,9 @@ type: software
 repository-code: "https://github.com/weojunior/labiialex-reanalise"
 # doi: "10.5281/zenodo.XXXXXXX"   # TODO add after Zenodo minting
 authors:
-  - given-names: "[Wilson ... nome completo a confirmar]"
-    family-names: "[sobrenome a confirmar]"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO add ORCID before release
+  - given-names: "Wilson E."
+    family-names: "Oliveira Junior"
+    orcid: "https://orcid.org/0000-0001-9812-6282"
 keywords:
   - "lexical analysis"
   - "IRaMuTeQ"

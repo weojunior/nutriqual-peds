@@ -14,9 +14,12 @@ here, obtained via setup_dependencies.sh):
   scripts (CHD.R, chdfunct.R, anacor.R, simi.R, and related files). Original method and
   code by Pierre Ratinaud (IRaMuTeQ), licensed under the GNU GPL.
 
-- These components are distributed with the labiia_lex software by Rafael Cardoso
-  Sampaio (https://github.com/cardososampaio/labiia_lex), version 1.0.9, GNU GPL v3,
-  from which they are fetched.
+- These components are distributed with the labiia_lex software
+  (https://github.com/cardososampaio/labiia_lex), version 1.0.9, GNU GPL v3, from which
+  they are fetched. labiia_lex was developed by Rafael Cardoso Sampaio, with code and
+  direct collaboration from Anderson Henrique (USP), Dalson Figueiredo (UFPE), Ian
+  Batista (Carter Center), Leonardo Nascimento (LabUFBA), and Nilton Sainz (UFPR), and
+  the collaborators of labiia_lab.
 
-The authors are grateful to Rafael Cardoso Sampaio for making labiia_lex publicly
-available and acknowledge Pierre Ratinaud for the IRaMuTeQ method.
+The authors are grateful to the labiia_lex development team for making the software
+publicly available and acknowledge Pierre Ratinaud for the IRaMuTeQ method.

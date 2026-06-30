@@ -73,8 +73,12 @@ See `CITATION.cff`. The archived version has a DOI (Zenodo); cite that DOI.
 
 ## Acknowledgements
 
-We thank Professor Rafael Cardoso Sampaio for making the labiia_lex repository publicly
-available, and we acknowledge the IRaMuTeQ method by Pierre Ratinaud.
+We thank the developers of the labiia_lex software, which provided the reference
+dictionaries, the canonical R scripts, and the conceptual basis for this
+reimplementation: Rafael Cardoso Sampaio, together with Anderson Henrique (USP), Dalson
+Figueiredo (UFPE), Ian Batista (Carter Center), Leonardo Nascimento (LabUFBA), and
+Nilton Sainz (UFPR), and the collaborators of labiia_lab. We acknowledge the IRaMuTeQ
+method by Pierre Ratinaud.
 
 ## Ethics
 
