@@ -10,13 +10,12 @@ version: "1.0.0"
 date-released: "2026-06-30"
 license: GPL-3.0-or-later
 type: software
-repository-code: "https://github.com/<ORG_OR_USER>/labiialex-reanalise"   # TODO confirm
+repository-code: "https://github.com/weojunior/labiialex-reanalise"
 # doi: "10.5281/zenodo.XXXXXXX"   # TODO add after Zenodo minting
 authors:
-  - given-names: "Wilson"            # TODO confirm full given/family names and ORCID
-    family-names: "[WEOJ]"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
-  # TODO: add co-authors as agreed (e.g., DAB, MSM, supervisors) with ORCIDs
+  - given-names: "[Wilson ... nome completo a confirmar]"
+    family-names: "[sobrenome a confirmar]"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO add ORCID before release
 keywords:
   - "lexical analysis"
   - "IRaMuTeQ"
