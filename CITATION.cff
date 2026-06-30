@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
-title: "Reproducible lexical analysis pipeline (Reinert/IRaMuTeQ, Python and R)"
+title: "NutriQual-Peds: a reproducible pipeline for computer-assisted lexical analysis of qualitative data in pediatric nutritional therapy"
 abstract: >-
   Reproducible Python and R pipeline reimplementing the Reinert descending hierarchical
   classification (the IRaMuTeQ method), with cross-validation between the two
