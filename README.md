@@ -78,7 +78,8 @@ Wilson E. Oliveira Junior, MD, PhD.
 
 ## How to cite
 
-See `CITATION.cff`. The archived version has a DOI (Zenodo); cite that DOI.
+Archived on Zenodo, DOI [10.5281/zenodo.21070825](https://doi.org/10.5281/zenodo.21070825)
+(see `CITATION.cff`). The badge above always resolves to the latest version.
 
 ## Acknowledgements
 

@@ -11,7 +11,7 @@ date-released: "2026-06-30"
 license: GPL-3.0-or-later
 type: software
 repository-code: "https://github.com/weojunior/labiialex-reanalise"
-# doi: "10.5281/zenodo.XXXXXXX"   # TODO add after Zenodo minting
+doi: "10.5281/zenodo.21070825"
 authors:
   - given-names: "Wilson E."
     family-names: "Oliveira Junior"
