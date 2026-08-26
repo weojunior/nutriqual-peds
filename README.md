@@ -59,7 +59,14 @@ python run_prepare.py --corpus <CORPUS_DIR> --out output/estudo7 \
   --anon-prefix anon
 python run_all.py --corpus <CORPUS_DIR> --out output/estudo7 --n-classes 3 ...
 python run_saturation.py --prepared output/estudo7 --n-classes 3
+python run_calibracao_saturacao.py --prepared output/estudo7 --n-classes 3
 ```
+
+`run_calibracao_saturacao.py` calibrates the saturation indicators against the
+instrument itself: resampling stability of the classification (100 resamples), a
+null baseline for the incremental adjusted Rand index (nested random subsets with
+the same sizes as the chronological steps, with the percentile of each observed
+value), and a Heaps model fitted to the vocabulary growth.
 
 The notebook `pipeline/notebooks/01_reproducao_analise_lexical.ipynb` runs the whole
 flow and renders the results.

@@ -6,11 +6,11 @@ abstract: >-
   classification (the IRaMuTeQ method), with cross-validation between the two
   implementations, used to reanalyze focus-group transcripts on nutritional challenges
   in pediatric oncology.
-version: "1.0.0"
-date-released: "2026-06-30"
+version: "1.1.0"
+date-released: "2026-08-26"
 license: GPL-3.0-or-later
 type: software
-repository-code: "https://github.com/weojunior/labiialex-reanalise"
+repository-code: "https://github.com/weojunior/nutriqual-peds"
 doi: "10.5281/zenodo.21070825"
 authors:
   - given-names: "Wilson E."
