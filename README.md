@@ -30,14 +30,16 @@ obtained separately with `setup_dependencies.sh`. See `NOTICE` for attribution.
 - `pipeline/notebooks/` — Jupyter notebook that reproduces tables and figures
   (outputs cleared).
 - `pipeline/output/estudo7/` — non-identifying outputs (document-term matrix, summary
-  tables, figures).
+  tables, figures). Unit metadata is limited to group labels and token counts.
 
 ## What is not included
 
 The transcripts contain sensitive data (caregivers of children in cancer treatment) and
-are **not shared**. Verbatim text (raw transcripts, typical segments, concordance lines,
-per-document text) is excluded. The non-identifying document-term matrix and aggregate
-outputs allow partial reproduction; full reproduction from raw text requires access to
+are **not shared**. Verbatim text (raw transcripts, the segmented corpus, typical
+segments, concordance lines, per-document text) is excluded, and so is the per-group
+demographic and clinical metadata used in the specificity analyses, which is available
+under controlled access with the corresponding author. The non-identifying
+document-term matrix and aggregate outputs allow partial reproduction; full reproduction from raw text requires access to
 the protected dataset under the original ethics approval.
 
 ## Setup
@@ -85,8 +87,9 @@ Wilson E. Oliveira Junior, MD, PhD.
 
 ## How to cite
 
-Archived on Zenodo, DOI [10.5281/zenodo.21070825](https://doi.org/10.5281/zenodo.21070825)
-(see `CITATION.cff`). The badge above always resolves to the latest version.
+Archived on Zenodo. Cite the concept DOI
+[10.5281/zenodo.21070824](https://doi.org/10.5281/zenodo.21070824), which always
+resolves to the latest version (see `CITATION.cff`).
 
 ## Acknowledgements
 

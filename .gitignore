@@ -12,6 +12,8 @@ extracted/internal/Rscripts/
 .DS_Store
 
 # Sensitive data must never be committed
+**/corpus_iramuteq.txt
+**/logs/
 **/uce_texts.csv
 **/typical_segments.csv
 **/kwic/
