@@ -6,7 +6,7 @@ abstract: >-
   classification (the IRaMuTeQ method), with cross-validation between the two
   implementations, used to reanalyze focus-group transcripts on nutritional challenges
   in pediatric oncology.
-version: "2.0.0"
+version: "2.0.2"
 date-released: "2026-08-26"
 license: GPL-3.0-or-later
 type: software
