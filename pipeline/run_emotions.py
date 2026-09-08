@@ -6,7 +6,11 @@ Completa o módulo de sentimento com as 8 categorias de emoção de Plutchik/NRC
 valência (positivo/negativo), usando o mesmo motor (syuzhet) do software original.
 
 Uso:
-    python run_emotions.py --prepared OUT_DIR [--variables grupo,tema]
+    python run_emotions.py --prepared OUT_DIR [--variables grupo,tema] [--mode tokens|legacy]
+
+Desde a v2.1.0 o modo padrão é ``tokens``: casamento insensível a acento e
+contagem de ocorrências. O modo ``legacy`` reproduz o comportamento original do
+syuzhet (palavras distintas por documento, sem acentos), usado até a v2.0.2.
 """
 
 from __future__ import annotations
@@ -37,6 +41,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Emoções NRC (syuzhet)")
     parser.add_argument("--prepared", required=True)
     parser.add_argument("--variables", default="")
+    parser.add_argument("--mode", choices=("tokens", "legacy"), default="tokens",
+                        help="tokens (corrigido, padrão) ou legacy (syuzhet original)")
     args = parser.parse_args()
 
     prepared = Path(args.prepared)
@@ -60,7 +66,8 @@ def main() -> int:
     print(f"Calculando emoções NRC (syuzhet) em {len(docs)} documentos ...")
     emo_out = out_dir / "emotions_per_doc.csv"
     proc = subprocess.run(
-        ["Rscript", str(R_DIR / "emotions_reference.R"), str(docs_path), str(emo_out)],
+        ["Rscript", str(R_DIR / "emotions_reference.R"), str(docs_path), str(emo_out),
+         args.mode],
         capture_output=True, text=True, encoding="utf-8")
     print(proc.stdout.strip() or proc.stderr.strip()[:400])
     if not emo_out.exists():
@@ -73,17 +80,31 @@ def main() -> int:
 
     # médias gerais e por variável
     overall = emo[EMOTIONS].mean()
-    print("\nEmoções médias (corpus):")
+    print(f"\nEmoções médias por documento (modo {args.mode}):")
     for e in EMOTIONS:
         print(f"  {EMO_PT[e]:12s} {overall[e]:.2f}")
+
+    # totais absolutos e share médio entre documentos (medida reportada no artigo)
+    totais = emo[EMOTIONS].sum()
+    share_doc = emo[EMOTIONS].div(emo[EMOTIONS].sum(axis=1), axis=0)
+    resumo = pd.DataFrame({
+        "tokens_total": totais.astype(int),
+        "share_agregado_pct": (100 * totais / totais.sum()).round(2),
+        "share_medio_docs_pct": (100 * share_doc.mean()).round(2),
+        "docs_com_ocorrencia": (emo[EMOTIONS] > 0).sum().astype(int),
+    }).rename(index=EMO_PT).sort_values("share_medio_docs_pct", ascending=False)
+    resumo.index.name = "emocao"
+    resumo.to_csv(out_dir / "emotions_summary.csv", sep=";", encoding="utf-8")
+    print(f"\nTotal de ocorrências emocionais: {int(totais.sum())} em {len(emo)} documentos")
+    print(resumo.to_string())
 
     # média geral no corpus inteiro (gráfico único, sem estratificar)
     ov = overall.rename(index=EMO_PT).sort_values(ascending=False)
     ov.to_frame("media_corpus").to_csv(out_dir / "emotions_overall.csv",
                                        sep=";", encoding="utf-8")
     ax = ov.plot(kind="bar", figsize=(9, 5), color="#4C72B0", legend=False)
-    ax.set_title("Emoções médias no corpus (NRC/syuzhet)")
-    ax.set_ylabel("intensidade média (ocorrências por documento)")
+    ax.set_title(f"Emoções médias no corpus (NRC/syuzhet, modo {args.mode})")
+    ax.set_ylabel("ocorrências médias por documento")
     ax.set_xlabel("")
     ax.bar_label(ax.containers[0], fmt="%.1f", padding=2, fontsize=9)
     plt.xticks(rotation=30, ha="right")
@@ -106,6 +127,8 @@ def main() -> int:
 
     print(f"\nResultados em {out_dir}/")
     print("Aviso: NRC é um léxico traduzido automaticamente; trate como exploratório.")
+    if args.mode == "legacy":
+        print("Aviso: modo legacy ignora palavras acentuadas e conta tipos, não ocorrências.")
     return 0
 
 
