@@ -1,0 +1,9 @@
+emocao;tokens_total;falantes_com_ocorrencia;falantes_pct;mediana_por_falante;q1;q3
+tristeza;494;36;94.7;11.0;4.0;19.0
+medo;454;36;94.7;11.5;4.25;17.0
+confiança;411;38;100.0;11.0;3.0;15.0
+antecipação;345;35;92.1;7.5;2.25;12.75
+alegria;344;37;97.4;8.0;3.0;13.75
+nojo;248;32;84.2;5.0;2.0;9.75
+raiva;215;32;84.2;4.5;2.0;9.75
+surpresa;159;28;73.7;3.5;0.25;5.5
