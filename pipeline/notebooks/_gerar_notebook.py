@@ -340,9 +340,11 @@ show_img("labbe/labbe_clusters.png", width=720)
 md(r'''
 ## 7. Emoções e sentimento (complementar)
 
-Léxico NRC (via `syuzhet`, R) aplicado a cada documento. Reportamos a **média
-geral das emoções no corpus inteiro** (8 categorias de Plutchik). O sentimento em
-português é frágil, então estes valores entram apenas como **pista**, não como
+Léxico NRC (`syuzhet`, R) aplicado a cada documento. Desde a v2.1.0 o casamento
+ignora acentos e conta **ocorrências** (o `get_nrc_sentiment` original quebra palavras
+acentuadas e conta palavras distintas; ver o changelog do README). Reportamos o
+**share médio de cada emoção entre os documentos** (8 categorias de Plutchik). O
+léxico traduzido é frágil, então estes valores entram apenas como **pista**, não como
 medida principal.
 ''')
 
@@ -351,7 +353,8 @@ run("run_emotions.py", "--prepared", OUT)
 em = pd.read_csv(OUT / "emotions/emotions_per_doc.csv", sep=";")
 emo_cols = ["raiva", "antecipação", "nojo", "medo", "alegria", "tristeza",
             "surpresa", "confiança", "negative", "positive"]
-display(em[emo_cols].mean().round(3).rename("média no corpus").to_frame().T)
+display(em[emo_cols].mean().round(3).rename("média por documento").to_frame().T)
+display(pd.read_csv(OUT / "emotions/emotions_summary.csv", sep=";"))
 # gráfico único: média geral das 8 emoções no corpus (sem estratificar)
 show_img("emotions/emotions_overall.png")
 ''')

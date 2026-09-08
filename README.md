@@ -62,6 +62,9 @@ python run_prepare.py --corpus <CORPUS_DIR> --out output/estudo7 \
 python run_all.py --corpus <CORPUS_DIR> --out output/estudo7 --n-classes 3 ...
 python run_saturation.py --prepared output/estudo7 --n-classes 3
 python run_calibracao_saturacao.py --prepared output/estudo7 --n-classes 3
+python run_emotions.py --prepared output/estudo7            # NRC emotions, corrected matching
+python run_emotions_por_falante.py --transcripts <TRANSCRIPTS_DIR> \
+  --out output/estudo7/emotions_speakers                    # per-caregiver aggregates only
 ```
 
 `run_calibracao_saturacao.py` calibrates the saturation indicators against the
@@ -72,6 +75,35 @@ value), and a Heaps model fitted to the vocabulary growth.
 
 The notebook `pipeline/notebooks/01_reproducao_analise_lexical.ipynb` runs the whole
 flow and renders the results.
+
+## Changelog
+
+### 2.1.0 (2026-09-07)
+
+Correction of the NRC emotion analysis. `syuzhet::get_nrc_sentiment()` splits words on
+`[^A-Za-z']+`, which breaks every accented word, so 1,613 of the 5,501 distinct entries
+of the Portuguese NRC lexicon could never be matched, and it counts each lexicon entry
+once per document (distinct words, not occurrences), which makes the counts
+non-additive across documents. `pipeline/r/emotions_reference.R` now matches words
+after removing diacritics and counts occurrences (mode `tokens`, the default). The
+previous behaviour is kept as mode `legacy` (`run_emotions.py --mode legacy`) and its
+per-document output is preserved as `emotions/emotions_per_doc_legacy_v2.0.2.csv`. The
+corrected matching was cross-checked against an independent Python implementation
+(Unicode NFKD normalisation): identical counts for all eight emotions. The script also
+forces a UTF-8 locale, because `Rscript` inherits the shell locale and a `C` locale
+corrupts multibyte characters. New outputs: `emotions/emotions_summary.csv` (totals,
+pooled share and mean per-document share) and `emotions_speakers/` (per-caregiver
+aggregates produced by `run_emotions_por_falante.py`; the per-speaker text is never
+written to disk). Ranking of the three leading emotions (sadness, fear, trust) is
+unchanged; joy and anticipation move ahead of disgust and anger.
+
+### 2.0.2 (2026-08-26)
+
+Sanitised per-group metadata and hardened the exclusion of sensitive data.
+
+### 1.0.0
+
+Initial release.
 
 ## License
 
