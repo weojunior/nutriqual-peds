@@ -1,6 +1,6 @@
 # NutriQual-Peds: a reproducible pipeline for computer-assisted lexical analysis of qualitative data in pediatric nutritional therapy
 
-[![DOI](https://zenodo.org/badge/1285083748.svg)](https://zenodo.org/badge/latestdoi/1285083748)
+[![DOI](https://zenodo.org/badge/1410943979.svg)](https://zenodo.org/badge/latestdoi/1410943979)
 
 Reproducible pipeline for the lexical analysis of qualitative data in pediatric
 nutritional therapy. It reimplements the Reinert descending hierarchical classification
@@ -22,25 +22,28 @@ obtained separately with `setup_dependencies.sh`. See `NOTICE` for attribution.
 
 ## What is included
 
-- `pipeline/labiialex_pipeline/` — Python package (corpus, preprocessing, CHD, AFC,
+- `pipeline/labiialex_pipeline/`: Python package (corpus, preprocessing, CHD, AFC,
   similarity, dendrogram, etc.).
-- `pipeline/run_*.py`, `pipeline/report.py` — command-line steps and orchestration.
-- `pipeline/r/` — thin R interface scripts that drive the canonical IRaMuTeQ scripts.
-- `pipeline/config_med/` — domain configuration (stopword list, synonym set).
-- `pipeline/notebooks/` — Jupyter notebook that reproduces tables and figures
+- `pipeline/run_*.py`, `pipeline/report.py`: command-line steps and orchestration.
+- `pipeline/r/`: thin R interface scripts that drive the canonical IRaMuTeQ scripts.
+- `pipeline/config_med/`: domain configuration (stopword list, synonym set).
+- `pipeline/notebooks/`: Jupyter notebook that reproduces tables and figures
   (outputs cleared).
-- `pipeline/output/estudo7/` — non-identifying outputs (document-term matrix, summary
+- `pipeline/output/estudo7/`: non-identifying outputs (document-term matrix, summary
   tables, figures). Unit metadata is limited to group labels and token counts.
+  Emotion results by caregiver are published only as a summary by emotion
+  (`emotions_speakers/emotions_speakers_summary.csv`).
 
 ## What is not included
 
 The transcripts contain sensitive data (caregivers of children in cancer treatment) and
 are **not shared**. Verbatim text (raw transcripts, the segmented corpus, typical
-segments, concordance lines, per-document text) is excluded, and so is the per-group
-demographic and clinical metadata used in the specificity analyses, which is available
-under controlled access with the corresponding author. The non-identifying
-document-term matrix and aggregate outputs allow partial reproduction; full reproduction from raw text requires access to
-the protected dataset under the original ethics approval.
+segments, concordance lines, per-document text) is excluded. So are the per-group
+demographic and clinical metadata used in the specificity analyses and the
+per-caregiver emotion counts, which are available under controlled access with the
+corresponding author. The non-identifying document-term matrix and aggregate outputs
+allow partial reproduction. Full reproduction from raw text requires access to the
+protected dataset under the original ethics approval.
 
 ## Setup
 
@@ -64,7 +67,7 @@ python run_saturation.py --prepared output/estudo7 --n-classes 3
 python run_calibracao_saturacao.py --prepared output/estudo7 --n-classes 3
 python run_emotions.py --prepared output/estudo7            # NRC emotions, corrected matching
 python run_emotions_por_falante.py --transcripts <TRANSCRIPTS_DIR> \
-  --out output/estudo7/emotions_speakers                    # per-caregiver aggregates only
+  --out output/estudo7/emotions_speakers                    # publish only the summary file
 ```
 
 `run_calibracao_saturacao.py` calibrates the saturation indicators against the
@@ -77,6 +80,27 @@ The notebook `pipeline/notebooks/01_reproducao_analise_lexical.ipynb` runs the w
 flow and renders the results.
 
 ## Changelog
+
+### 2.1.1 (2026-10-08)
+
+Removal of data that should not have been public. No analysis result changed.
+
+- A first name of a person mentioned in the transcripts was removed from
+  `pipeline/config_med/stopwords.txt`. The name does not occur in the anonymized
+  corpus, so `dtm.csv` and `forms.csv` are byte-identical to version 2.1.0 (SHA-256
+  `b7fcb28ea7c3dc8abb01c53c452db3edb4b2798b1af3a51f2f2fbad0f6002fdd` and
+  `55d285e17d3f9ad0e93e8234772ea05890f31dcc3a7ef7b29ace96faebaaa0ec`).
+- Per-group demographic and clinical metadata were removed from the outputs: the
+  metadata columns of `chd/chd_classes.csv`, the specificity and emotion tables by
+  metadata variable, and the matching entries of `afc_spec/afc_spec_comparison.json`.
+  Results by group (`grupo`) and the class of each segment are unchanged.
+- The per-caregiver emotion file was removed. The summary by emotion is kept.
+- `CITATION.cff` pointed to the DOI of version 1.0.0. It now carries no DOI (see How
+  to cite).
+- `.gitignore` now blocks outputs by metadata variable and per-caregiver files.
+
+The repository history was rewritten without these files, and the removal of the
+earlier Zenodo versions was requested.
 
 ### 2.1.0 (2026-09-07)
 
@@ -119,9 +143,8 @@ Wilson E. Oliveira Junior, MD, PhD.
 
 ## How to cite
 
-Archived on Zenodo. Cite the concept DOI
-[10.5281/zenodo.21070824](https://doi.org/10.5281/zenodo.21070824), which always
-resolves to the latest version (see `CITATION.cff`).
+Archived on Zenodo. The DOI badge at the top of this page resolves to the latest
+version. Cite the DOI of the version you used, shown on its Zenodo page.
 
 ## Acknowledgements
 
