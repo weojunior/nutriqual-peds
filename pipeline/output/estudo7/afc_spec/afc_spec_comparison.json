@@ -1,0 +1,21 @@
+{
+  "afc": {
+    "total_inertia_py": 0.677281,
+    "inertia_pct_py": [
+      55.154,
+      44.846
+    ],
+    "inertia_pct_r": [
+      55.154,
+      44.846
+    ],
+    "max_abs_diff_inertia_pct": 0.0
+  },
+  "specificities": {
+    "grupo": {
+      "n_compared": 44,
+      "pearson_py_vs_r": 1.0,
+      "sign_agreement": 1.0
+    }
+  }
+}
