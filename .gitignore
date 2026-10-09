@@ -20,3 +20,13 @@ extracted/internal/Rscripts/
 **/report.html
 **/_docs.csv
 *.log
+
+# Per-group metadata and per-caregiver outputs stay under controlled access
+**/afc_spec/_spec_table_*.csv
+!**/afc_spec/_spec_table_grupo.csv
+**/afc_spec/specificities_*.csv
+!**/afc_spec/specificities_grupo.csv
+!**/afc_spec/specificities_grupo_r.csv
+**/emotions/emotions_by_*
+!**/emotions/emotions_by_grupo.*
+**/emotions_speakers/emotions_per_speaker.csv
